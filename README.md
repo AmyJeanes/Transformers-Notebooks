@@ -10,6 +10,8 @@ The code is based on the [quick start code example](https://huggingface.co/maya-
 
 Make sure Python 3.10+ is installed on your system before running any commands.
 
+The latest CUDA toolkit is installed (if using a Nvidia GPU): https://developer.nvidia.com/cuda-downloads
+
 All commands must be ran in the folder of this repository e.g. `C:\_git\maya`
 
 ## Create virtual environment
@@ -45,7 +47,7 @@ Note: You might get a warning from VS Code saying the package may have been inst
 
 ### Install PyTorch
 
-Run `nvidia-smi` in a terminal to check your CUDA version. It should be listed at the top right, e.g. `CUDA Version: 13.0`, for example:
+If using a Nvidia GPU for acceleration, run `nvidia-smi` in a terminal to check your CUDA version. It should be listed at the top right, e.g. `CUDA Version: 13.0`, for example:
 
 ```
 > nvidia-smi
@@ -68,6 +70,8 @@ Go to https://pytorch.org/get-started/locally/ and pick the appropriate CUDA pla
 ```
 python -m uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
 ```
+
+Note: You can run this on the CPU as well if you do not have a Nvidia GPU by selecting the CPU option on the page above.
 
 ### Install other dependencies
 
