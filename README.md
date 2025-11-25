@@ -1,5 +1,7 @@
 # Maya voice model
 
+This is a sample notebook setup to try out the Maya1 TTS model from https://huggingface.co/maya-research/maya1
+
 # First time setup
 
 ## Create virtual environment
