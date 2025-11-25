@@ -4,6 +4,8 @@ This is a sample notebook setup to try out the Maya1 TTS model from https://hugg
 
 The code is based on the [quick start code example](https://huggingface.co/maya-research/maya1#quick-start-generate-voice-with-emotions) modified slightly to work better in a notebook.
 
+This repository, except for the `snac` and `soundfile` requirements and the actual `main.ipynb`, is essentially a setup guide for HuggingFace transformers and could be repurposed to run many different things.
+
 # First time setup
 
 ## Prerequisites
