@@ -65,13 +65,13 @@ Tue Nov 25 16:17:41 2025
 +-----------------------------------------+------------------------+----------------------+
 ```
 
+If this command doesn't work or you cannot see a CUDA version then you have not installed CUDA correctly, but PyTorch can still run on CPU if you can't use an Nvidia GPU.
+
 Go to https://pytorch.org/get-started/locally/ and pick the appropriate CUDA platform for your system e.g. CUDA 13.0 and run the install command provided, e.g. for CUDA 13.0:
 
 ```
 python -m uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
 ```
-
-Note: You can run this on the CPU as well if you do not have a Nvidia GPU by selecting the CPU option on the page above.
 
 ### Install other dependencies
 
