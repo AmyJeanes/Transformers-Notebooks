@@ -1,5 +1,7 @@
 transformers
 snac
 soundfile
-hf_xe
+hf_xet
 accelerate
+ipython
+ipykernel
