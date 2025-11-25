@@ -6,7 +6,11 @@ The code is based on the [quick start code example](https://huggingface.co/maya-
 
 # First time setup
 
-Make sure all commands are ran in the folder of this repository e.g. `C:\_git\maya`
+## Prerequisites
+
+Make sure Python 3.10+ is installed on your system before running any commands.
+
+All commands must be ran in the folder of this repository e.g. `C:\_git\maya`
 
 ## Create virtual environment
 
