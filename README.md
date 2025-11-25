@@ -29,7 +29,15 @@ python -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-## Install PyTorch
+## Install dependencies
+
+### Install UV package manager for speed
+
+```
+pip install uv
+```
+
+### Install PyTorch
 
 Run `nvidia-smi` in a terminal to check your CUDA version. It should be listed at the top right, e.g. `CUDA Version: 13.0`, for example:
 
@@ -52,13 +60,13 @@ Tue Nov 25 16:17:41 2025
 Go to https://pytorch.org/get-started/locally/ and pick the appropriate CUDA platform for your system e.g. CUDA 13.0 and run the install command provided, e.g. for CUDA 13.0:
 
 ```
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+python -m uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
 ```
 
-## Install dependencies
+### Install other dependencies
 
 ```
-pip install -r requirements.txt
+python -m uv pip install -r requirements.txt
 ```
 
 ## Usage
